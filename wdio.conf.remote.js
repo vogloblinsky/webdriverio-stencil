@@ -8,6 +8,7 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+    sauceConnect: true,
     maxInstances: 10,
     capabilities: [{
         platform: 'Windows 10',
