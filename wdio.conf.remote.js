@@ -6,6 +6,9 @@ exports.config = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: true,
+    specs: [
+        './test/specs/**/*.js'
+    ],
     maxInstances: 10,
     capabilities: [{
         os: 'Windows',
@@ -14,12 +17,11 @@ exports.config = {
         browser_version: '72.0',
         project: PROJECT_NAME
     }],
-    port: 9515,
-    path: '/',
     // Level of logging verbosity: trace | debug | info | warn | error
     logLevel: 'info',
     deprecationWarnings: true,
     bail: 0,
+    baseUrl: 'http://localhost',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
@@ -28,8 +30,5 @@ exports.config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
-    },
-    specs: [
-        './test/specs/**/*.js'
-    ]
+    }
 };
