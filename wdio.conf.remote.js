@@ -5,7 +5,6 @@ exports.config = {
     services: ['sauce'],
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
-    sauceConnect: true,
     specs: [
         './test/specs/**/*.js'
     ],
@@ -21,7 +20,6 @@ exports.config = {
     logLevel: 'info',
     deprecationWarnings: true,
     bail: 0,
-    baseUrl: 'http://localhost',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,

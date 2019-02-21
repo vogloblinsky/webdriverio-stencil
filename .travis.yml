@@ -9,8 +9,6 @@ cache:
     directories:
         - node_modules
         - '$HOME/.npm'
-addons:
-    sauce_connect: true
 script:
     - echo '1. Browserstack tests'
     - npm run test.remote
