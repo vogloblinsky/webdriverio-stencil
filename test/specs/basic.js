@@ -6,4 +6,8 @@ describe('webdriver.io page', () => {
         const title = browser.getTitle();
         assert.equal(title, 'Nutrition Web Component - Nova badge');
     });
+    it('should return correct score', () => {
+        const innerEl = $('nova-badge').shadow$('.score');
+        assert.equal(innerEl.getText(), 1);
+    });
 });

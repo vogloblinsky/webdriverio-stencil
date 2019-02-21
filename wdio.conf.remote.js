@@ -15,6 +15,11 @@ exports.config = {
         browserName: 'chrome',
         version: '72.0',
         name: PROJECT_NAME
+    }, {
+        platform: 'Windows 10',
+        browserName: 'internet explorer',
+        version: '11.285',
+        name: PROJECT_NAME
     }],
     // Level of logging verbosity: trace | debug | info | warn | error
     logLevel: 'info',
