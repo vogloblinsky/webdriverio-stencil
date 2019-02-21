@@ -10,11 +10,10 @@ exports.config = {
     ],
     maxInstances: 10,
     capabilities: [{
-        os: 'Windows',
-        os_version: '10',
-        browser: 'Chrome',
-        browser_version: '72.0',
-        project: PROJECT_NAME
+        platform: 'Windows 10',
+        browserName: 'chrome',
+        version: '72.0',
+        name: PROJECT_NAME
     }],
     // Level of logging verbosity: trace | debug | info | warn | error
     logLevel: 'info',
