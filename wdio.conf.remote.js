@@ -22,7 +22,7 @@ exports.config = {
         name: PROJECT_NAME
     }],
     // Level of logging verbosity: trace | debug | info | warn | error
-    logLevel: 'info',
+    logLevel: 'debug',
     deprecationWarnings: true,
     bail: 0,
     waitforTimeout: 10000,
